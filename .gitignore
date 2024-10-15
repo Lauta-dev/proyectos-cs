@@ -1,0 +1,32 @@
+# Archivos generados por Visual Studio
+bin/
+obj/
+
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.vs/
+.vscode/
+
+# Archivos de configuración de NuGet
+packages/
+*.nupkg
+
+# Archivos temporales
+*.tmp
+*.log
+
+# Archivos de usuario de Rider
+.idea/
+
+# Otros archivos temporales
+*.db
+*.pdb
+*.mdb
+*.cache
+
+# Archivos de respaldo
+*~
+*.bak
+*.swp
+
