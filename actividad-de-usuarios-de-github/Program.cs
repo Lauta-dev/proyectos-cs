@@ -23,19 +23,15 @@ class Program
         };
         try
         {
-            /*
-              HttpClient client = new HttpClient();
+            HttpClient client = new HttpClient();
 
-              client.DefaultRequestHeaders.Add("User-Agent", "C# App");
-              HttpResponseMessage res = await client.GetAsync(url);
+            client.DefaultRequestHeaders.Add("User-Agent", "C# App");
+            HttpResponseMessage res = await client.GetAsync(url);
 
-              HttpContent content = res.Content;
-              var data = await content.ReadAsStringAsync();
-              Github[] gh = JsonSerializer.Deserialize<Github[]>(data, serializeOptions);*/
+            HttpContent content = res.Content;
+            var data = await content.ReadAsStringAsync();
+            Github[] gh = JsonSerializer.Deserialize<Github[]>(data, serializeOptions);
 
-            StreamReader r = new StreamReader("ghEvent.json");
-            string json = r.ReadToEnd();
-            Github[] gh = JsonSerializer.Deserialize<Github[]>(json, serializeOptions);
             for (int i = 0; i < gh.Length; i++)
             {
                 var ghData = gh[i];
